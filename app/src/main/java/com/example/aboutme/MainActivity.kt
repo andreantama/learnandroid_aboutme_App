@@ -31,8 +31,11 @@ class MainActivity : AppCompatActivity() {
         /*result.text = editText.text
         view.visibility = View.GONE
         result.visibility = View.VISIBLE*/
-        binding.idResult.text = binding.idNickname.text
-        binding.btnDone.visibility = View.GONE
-        binding.idResult.visibility = View.VISIBLE
+        binding.apply {
+            binding.idResult.text = binding.idNickname.text
+            binding.btnDone.visibility = View.GONE
+            binding.idResult.visibility = View.VISIBLE
+        }
+
     }
 }
