@@ -6,8 +6,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding:ActivityMainBinding
     lateinit var result: TextView
     lateinit var editText:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
