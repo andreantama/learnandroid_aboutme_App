@@ -8,20 +8,19 @@ import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    //lateinit
     lateinit var result: TextView
+    lateinit var editText:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        editText = findViewById(R.id.id_nickname)
+        result = findViewById(R.id.idResult)
         findViewById<Button>(R.id.btn_done).setOnClickListener {
             addNickname(it)
         }
-        //editText =
-        result = findViewById(R.id.idResult)
     }
 
     private fun addNickname(view: View) {
-        var editText:EditText = findViewById(R.id.id_nickname)
         result.text = editText.text
         view.visibility = View.GONE
         result.visibility = View.VISIBLE
