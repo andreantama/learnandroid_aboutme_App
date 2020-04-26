@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.MyName = kelasMyName
+        binding.myName = kelasMyName
        // editText = findViewById(R.id.id_nickname)
         //result = findViewById(R.id.idResult)
         /*findViewById<Button>(R.id.btn_done).setOnClickListener {
@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
         view.visibility = View.GONE
         result.visibility = View.VISIBLE*/
         binding.apply {
-            binding.idResult.text = binding.idNickname.text
+            myName.nickname = (binding.idNickname.text).toString()
+            //binding.idResult.text = binding.idNickname.text
             binding.btnDone.visibility = View.GONE
             binding.idResult.visibility = View.VISIBLE
         }
