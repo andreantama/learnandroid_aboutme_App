@@ -13,10 +13,12 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
     //lateinit var result: TextView
     //lateinit var editText:EditText
+    val kelasMyName = MyName(name="Andrean Yogatama")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.MyName = kelasMyName
        // editText = findViewById(R.id.id_nickname)
         //result = findViewById(R.id.idResult)
         /*findViewById<Button>(R.id.btn_done).setOnClickListener {

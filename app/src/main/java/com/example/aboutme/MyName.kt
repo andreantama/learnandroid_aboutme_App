@@ -1,4 +1,4 @@
 package com.example.aboutme
 
-data class MyName(var name:String, var nickname:String) {
+data class MyName(var name:String = "Nama Default", var nickname:String = "Nickname Default") {
 }
