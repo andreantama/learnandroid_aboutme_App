@@ -2,4 +2,6 @@
     <string name="app_name">About Me</string>
     <string name="name">Andrean Yogatama</string>
     <string name="res_gambar_bintang">Ini adalah gambar bintang</string>
+    <string name="input_nickname">Input Your Nickname ?</string>
+    <string name="btndone">Done</string>
 </resources>
