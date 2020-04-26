@@ -19,7 +19,10 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         editText = findViewById(R.id.id_nickname)
         result = findViewById(R.id.idResult)
-        findViewById<Button>(R.id.btn_done).setOnClickListener {
+        /*findViewById<Button>(R.id.btn_done).setOnClickListener {
+            addNickname(it)
+        }*/
+        binding.btnDone.setOnClickListener {
             addNickname(it)
         }
     }
