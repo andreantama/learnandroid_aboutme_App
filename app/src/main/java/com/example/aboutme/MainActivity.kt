@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var editText:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         editText = findViewById(R.id.id_nickname)
         result = findViewById(R.id.idResult)
         findViewById<Button>(R.id.btn_done).setOnClickListener {
