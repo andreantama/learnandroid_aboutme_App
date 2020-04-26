@@ -11,14 +11,14 @@ import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
-    lateinit var result: TextView
-    lateinit var editText:EditText
+    //lateinit var result: TextView
+    //lateinit var editText:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        editText = findViewById(R.id.id_nickname)
-        result = findViewById(R.id.idResult)
+       // editText = findViewById(R.id.id_nickname)
+        //result = findViewById(R.id.idResult)
         /*findViewById<Button>(R.id.btn_done).setOnClickListener {
             addNickname(it)
         }*/
@@ -28,8 +28,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addNickname(view: View) {
-        result.text = editText.text
+        /*result.text = editText.text
         view.visibility = View.GONE
-        result.visibility = View.VISIBLE
+        result.visibility = View.VISIBLE*/
+        binding.idResult.text = binding.idNickname.text
+        binding.btnDone.visibility = View.GONE
+        binding.idResult.visibility = View.VISIBLE
     }
 }
