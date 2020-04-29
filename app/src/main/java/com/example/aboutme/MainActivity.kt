@@ -34,10 +34,11 @@ class MainActivity : AppCompatActivity() {
         view.visibility = View.GONE
         result.visibility = View.VISIBLE*/
         binding.apply {
-            myName.nickname = (binding.idNickname.text).toString()
+            kelasMyName.nickname = idNickname.text.toString()
+            invalidateAll()
             //binding.idResult.text = binding.idNickname.text
-            binding.btnDone.visibility = View.GONE
-            binding.idResult.visibility = View.VISIBLE
+            btnDone.visibility = View.GONE
+            idResult.visibility = View.VISIBLE
         }
 
     }

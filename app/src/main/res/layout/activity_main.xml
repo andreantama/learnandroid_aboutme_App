@@ -42,9 +42,9 @@
         android:id="@+id/idResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@={MyName.nickname}"
         android:textAlignment="center"
-        android:visibility="gone" />
+        android:visibility='gone'/>
 
     <ImageView
         android:id="@+id/idgambarnya"
